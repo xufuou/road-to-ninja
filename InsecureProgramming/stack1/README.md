@@ -45,4 +45,4 @@ Looking the source code this exercise is quite straightforward we have a int var
 
 Let's run the program:
 
-![alt text](https://imgur.com/lpYD3tj)
+![alt text](https://i.imgur.com/lpYD3tj.png)
