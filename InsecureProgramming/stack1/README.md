@@ -16,9 +16,19 @@ int main() {
 		printf("you win!\n");
 }
 ```
-0. Check gcc version
+## Setup
+Check if ASLR is disabled
+```bash
+sysctl kernel.randomize_va_space
+kernel.randomize_va_space = 0
+```
+
+Check gcc version
 ```bash 
 gcc -v 
 gcc version 6.1.1 20160802 (Debian 6.1.1-11)
 ```
-1. Compile the code with gcc
+Compile the code with gcc without protections
+
+gcc -m32 -z execstack -fno-stack-protector -o stack1 stack1.c
+
