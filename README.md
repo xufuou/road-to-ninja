@@ -6,7 +6,7 @@ This is a ongoing process which I will add new content as I start to learn more 
 
 ## Gera's Insecure Programming
 
-This is a set of vulnerable C code that can be found [here](https://github.com/deadbits/InsecureProgramming). You may also find a lot of tutorials discussing its resolution.
+This is a set of vulnerable C code that can be found [here](https://github.com/deadbits/InsecureProgramming). You may also find a lot of tutorials in the web discussing its resolution.
 
 Each exercise is accompanied with the original code and a README discussing about its resolution.
 
