@@ -29,12 +29,12 @@ gcc -v
 gcc version 6.1.1 20160802 (Debian 6.1.1-11)
 ```
 
-Compile the code with gcc without protections
+Compile the code with gcc without protections for 32-bits
 ```bash
 gcc -m32 -z execstack -fno-stack-protector -o stack1 stack1.c
 ```
 
-If you fall into a similar error ```/usr/include/features.h:364:25: fatal error: sys/cdefs.h: No such file or directory``` you have to run
+If you fall into a similar error ```/usr/include/features.h:364:25: fatal error: sys/cdefs.h: No such file or directory``` run
 ```bash
 sudo apt-get install g++-multilib
 ```
