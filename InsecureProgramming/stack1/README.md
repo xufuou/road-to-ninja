@@ -26,7 +26,7 @@ kernel.randomize_va_space = 0
 Check gcc version
 ```bash 
 gcc -v 
-gcc version 6.1.1 20160802 (Debian 6.1.1-11)
+gcc version 7.2.0 (Debian 7.2.0-8)
 ```
 
 Compile the code with gcc without protections for 32-bits
@@ -40,3 +40,9 @@ sudo apt-get install g++-multilib
 ```
 
 ## Exploitation
+
+Looking the source code this exercise is quite straightforward we have a int variable named cookie and a char array of lenght 80 named buf that uses the [dangerous gets](https://stackoverflow.com/questions/1694036/why-is-the-gets-function-so-dangerous-that-it-should-not-be-used) function to read from stdin to buf. This snippet is cleary vulnerable to a buffer overflow attack.
+
+Let's run the program:
+
+![alt text](https://imgur.com/lpYD3tj)
