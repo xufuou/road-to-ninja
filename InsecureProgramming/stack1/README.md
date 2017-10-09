@@ -46,3 +46,6 @@ Looking the source code this exercise is quite straightforward we have a int var
 Let's run the program:
 
 ![alt text](https://i.imgur.com/lpYD3tj.png)
+
+Since the stack grows top down we can get the offset from the buf and cookie by subtracting ffffd65c to ffffd6ac which gives exactly 80 bytes as we expected. We can now overflow the buf to overwrite the value of cookie. Since the cookie value has to be 0x41424344 which is ABCD. Since the binary was compiled for 32-bit the program memory is represented in [little endian](https://www.cs.umd.edu/class/sum2003/cmsc311/Notes/Data/endian.html), we have to invert the payload ABCD to DCBA.
+
