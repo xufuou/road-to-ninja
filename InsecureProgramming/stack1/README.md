@@ -1,3 +1,4 @@
+## Source code
 ```c
 /* stack1-stdin.c                               *
  * specially crafted to feed your brain by gera */
@@ -15,3 +16,8 @@ int main() {
 		printf("you win!\n");
 }
 ```
+0. Check gcc version
+```bash gcc -v 
+gcc version 6.1.1 20160802 (Debian 6.1.1-11)
+```
+1. Compile the code with gcc
