@@ -17,7 +17,8 @@ int main() {
 }
 ```
 0. Check gcc version
-```bash gcc -v 
+```bash 
+gcc -v 
 gcc version 6.1.1 20160802 (Debian 6.1.1-11)
 ```
 1. Compile the code with gcc
