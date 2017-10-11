@@ -1,6 +1,8 @@
-# learning-reverse
+# road-to-ninja
 
-This is my personal repository contaning material to learn more about reverse engineering.
+[Inspiration](http://blog.talosintelligence.com/2009/07/how-do-i-become-ninja.html)
+
+This is my personal repository contaning material to learn more about C exploitation, reverse engineering and malware analysis.
 
 This is a ongoing process which I will add new content as I start to learn more concepts acompanied by examples.
 
